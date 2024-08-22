@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  clr-primary: #abef5f; 
+  /* rgb(171, 239, 95) */
+
+  clr-nutral_1: #e7c1d3;
+  /* rgb(231, 193, 211) */
+  clr-nutral-_2: #f0da6e;
+  /* rgb(240, 218, 110) */
+  clr-nutral_3: #a4dac3;
+  /* rgb(164, 218, 195) */
+  clr-nutral_4: #77aaea;
+  /* rgb(119, 170, 234) */
+}

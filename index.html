@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--* fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--* tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!--* tailwind_config.js -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+<!--* tailwind_customize -->
+
+<style type="text/tailwindcss">
+  @layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+  }
+</style>
+
+<!--* daisyUI CDN -->
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+                        <title>  PH_2_AS  </title>
+
+
+
+    <!--* fav icon -->
+    <link rel="icon" type="image/x-icon" href="./B10-Assignment-03/ui/habibLGO.png ">
+
+    <!--* css link -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+
+    <!--* navbar -->
+
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <i class="
+        fa-solid fa-location-arrow text-sm bg-[#abef5f]
+        px-2 py-1  ml-5 mt-1 rounded-full
+        "></i>
+        <a class="text-2xl font-bold pl-1">
+          Rinterio
+        
+        </a>
+      </div>
+      
+      <!--* nav button -->
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+                <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Home</a></li>
+                <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Services</a></li>
+                <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Portfolio</a></li>
+                <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Blogs</a></li>
+                <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="navbar-end mr-3 ">
+
+        <div class="search_cart px-4 py-2 hidden md:flex">
+
+          <i class="
+          fa-solid fa-magnifying-glass p-3 shadow-xl rounded-full ease-in-out duration-100
+          hover:bg-[#abef5f] border-2 border-white hover:border-2 hover:border-black
+
+          "></i>
+
+          <i class="
+          fa-solid fa-cart-shopping p-3 shadow-xl rounded-full ease-in-out duration-100
+          hover:bg-[#abef5f] border-2 border-white hover:border-2 hover:border-black
+
+          "></i>
+        </div>
+
+        <div class=
+        "button bg-[#abef5f] px-4 py-2 rounded-full ease-in-out duration-200
+        hover:bg-transparent hover:border-2 border-[#abef5f] hover:font-bold
+        hidden sm:block
+        ">
+        <a class="">Book Consult</a>
+        <i class="
+        fa-solid fa-location-arrow text-sm text-[#abef5f]
+        px-2 py-1  ml-1 rounded-full bg-[black]
+        "></i></div>
+      </div>
+      
+      <!--* dropdown -->
+
+      <div class="dropdown overflow-hidden">
+        <div tabindex="0" role="button" class="
+        lg:hidden  mr-5
+
+        
+        ">
+          <svg
+          class="h-7 w-7 border-2 border-black rounded-full"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16 M4 12h8m-8 6h16"
+              
+               />
+          </svg>
+        </div>
+        <!-- <ul
+          tabindex="0"
+          class="
+          menu menu-sm dropdown-content bg-base-100 rounded-box z-[1]
+          mt-3 mr-96 w-55 p-2 shadow 
+          
+          ">
+
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul> -->
+
+      </div>
+    </div>
+
+    <main>
+
+      <section class="hero_aria flex flex-col justify-center items-center">
+
+        <div class="img_section">
+          <img src="./B10-Assignment-03/assets/banner.png">
+        </div>
+
+        <div class="text_section text-center">
+          <h1 class="
+          text-5xl font-bold
+          mb-5
+          ">A barn house of this design has a
+            <br>
+            striking appearance</h1>
+
+            <p> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>
+            accents, and large windows that flood the space with natural light. </p>
+
+            <div class=
+        "button bg-[#d4f7ae] px-4 py-2 rounded-full ease-in-out duration-200
+        hover:bg-transparent hover:border-2 border-[#abef5f] hover:font-bold
+        inline-block mt-5
+        ">
+        <a class="">Book Consult</a>
+        <i class="
+        fa-solid fa-location-arrow text-sm text-black
+        px-2 py-1  ml-1 rounded-full bg-[#abef5f]
+        "></i></div>
+        </div>
+
+
+      </section>
+
+
+      <!--* main content aria -->
+
+      <section class="main_content">
+
+        <div class="text_container">
+          <button>
+            <i class="fa-solid fa-arrow-right"></i>
+            About Us
+          </button>
+
+          <h2>We design thoughtful,
+            liveable spaces</h2>
+
+            <p>The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood. sleek metal accents.</p>
+              
+            <div class="icon_container">
+    
+              <!--* card1 -->
+              <div class="
+              card_1 flex items-center inline
+              shadow-xl w-1/2 rounded-2xl
+              ">
+                 <div class="img_container">
+
+                  <img src="./B10-Assignment-03/assets/commercial.png">
+                 </div>
+
+                 <div class="text_container p-5">
+                  <h3
+                  class="font-bold"
+                  >Commercial</h3>
+                  <p>The barn house captivates with its blend
+                    of rustic charm and modern.</p>
+                 </div>
+
+              </div>
+    <!--* card2 -->
+              <div class="
+              card_2 flex items-center inline
+              shadow-xl mt-2 w-1/2 rounded-2xl
+              ">
+                 <div class="img_container">
+
+                  <img src="./B10-Assignment-03/assets/residential.png">
+                 </div>
+
+                 <div class="text_container p-5">
+                  <h3
+                  class="font-bold"
+                  >Commercial</h3>
+                  <p>The barn house captivates with its blend
+                    of rustic charm and modern.</p>
+                 </div>
+
+              </div>
+            </div>
+        </div>
+
+        <div class="img_container">
+
+          <img src="./B10-Assignment-03/assets/Rectangle.png">
+        </div>
+
+      </section>
+    </main>
+
+  </body>
+  </html>
