@@ -7,6 +7,14 @@
     <!--* fontawsome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    
+<!--* font1 link -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bonheur+Royale&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!--* font2 link -->
 
     <!--* tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,12 +23,18 @@
     <script>
       tailwind.config = {
         theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
-          }
-        }
+
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+
+              fontFamily: {
+                fn: ['Roboto', 'sans-serif'],
+            },
+            
+          },
+        },
       }
     </script>
 
@@ -40,8 +54,6 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-
-
                         <title>  PH_2_AS  </title>
 
 
@@ -53,7 +65,7 @@
     <link rel="stylesheet" href="style.css">
 
   </head>
-  <body>
+  <body class="font-fn">
 
 
     <!--* navbar -->
@@ -256,7 +268,7 @@
 
 <!--* 2nd card section -->
 
-        <div class="cards  mt-20 p-20 px-40">
+        <div class="cards  mt-20 p-3 md:p-20 md:px-40">
 
           <!--* text_area -->
           <div class="text_area text-center mb-8">
@@ -561,7 +573,7 @@ and modern.
 
           <!--* card6-->
           <div class=" hover:border-2 hover:border-gray-500 ease-in-out duration-100
-          card6 p-5 border-[1px] border-gray-300 h-56 order-6
+          card6 p-5 border-[1px] border-gray-300 h-60 order-6
           flex rounded-2xl  col-span-full w-full
           md:col-span-6
           lg:hidden
@@ -573,6 +585,137 @@ and modern.
 
         </div>
       </section>
+
+
+      <!--* my custom section -->
+
+<section class="custom_section lg:px-20">
+
+  <div class="text_area text-center p-10 flex flex-col items-center">
+
+    <h3 class="
+    font-bold text-4xl mb-5 border-t-2 pt-10
+    ">Our Living Room Design</h3>
+
+    <p class="
+     w-[80%]
+    ">In Western architecture, a living room, also called a lounge room lounge sitting room or drawing room, is a room for relaxing and socializing in a residential house or apartment. Such a room is sometimes called a front room when it is near the main entrance at the front of the house. In large, formal homes, a sitting room is often a small private living area adjacent to a bedroom, such as the Queens' Sitting Room and the Lincoln Sitting Room of the White House.</p>
+  </div>
+
+
+
+  <!--* carousle_container -->
+
+
+  <div class="carousle_container md:flex xl:flex-col p-5 md:gap-5 xl:gap-0">
+
+<!--* carousel 1 -->
+  <div class="modern
+  text_carousle_area flex flex-col-reverse items-center shadow-2xl p-4 m-auto
+  rounded-[2rem] hover:border-2 border-gray-400 md:h-[30rem] ease-in-out duration-100
+  
+w-[70%]  md:w-1/2 xl:h-auto
+
+  xl:w-[70%] mb-10 md:mb-0
+  xl:flex-row
+  ">
+
+
+  <div class="carousel carousel-vertical rounded-box h-60 xl:ml-2">
+  <div class="carousel-item h-full w-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/room1.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-coverl" src="./B10-Assignment-03/img/room2.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/room3.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/room4.png" />
+  </div>
+
+
+</div>
+
+
+<div class="text_area p-5 xl:text-left text-center h-1/2 xl:p-16 xl:w-[55%]">
+
+  <h3 class="
+  font-bold text-3xl mb-3
+  ">Modern Style</h3>
+
+  <p> Stick to neutral colors soft creams, warm beiges, and muted grays. These create a soothing backdrop for the room.</p>
+
+  <div class="mt-3
+">
+      <a class="text-xl font-bold hover:border-b-2 border-lime-500" href="https://www.thespruce.com/living-room-ideas-5194639" target="_blank">
+
+    View Details
+                
+   </a>
+   <i class="
+        fa-solid fa-location-arrow text-xs bg-[#abef5f]
+        px-2 py-1  ml-2 mt-1 rounded-full hover:text-lime-500 hover:bg-black
+        "></i></div>
+</div>
+</div>
+
+
+<!--* carousel 2 -->
+  <div class="royle
+  text_carousle_area2 flex flex-col  items-center shadow-2xl p-4 m-auto
+  rounded-[2rem] hover:border-2 border-gray-400 xl:w-[70%] md:h-[30rem]
+  w-[70%] md:m-0 xl:m-auto md:mt-0 ease-in-out duration-100
+  md:w-1/2 xl:h-auto
+  xl:flex-row-reverse
+  xl:mt-10
+  ">
+
+
+  <div class="carousel carousel-vertical rounded-box h-60 xl:mr-2">
+  <div class="carousel-item h-full w-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/royal1.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/royal2.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/royal3.png" />
+  </div>
+  <div class="carousel-item h-full">
+    <img class="w-full  object-cover" src="./B10-Assignment-03/img/royal4.png" />
+  </div>
+
+
+</div>
+
+
+<div class="text_area p-5 xl:text-right text-center h-1/2 xl:p-16 xl:w-[55%]">
+
+  <h3 class="
+  font-bold text-3xl mb-3
+  ">
+  <span class="font-fn1">Royle</span> Style</h3>
+
+  <p> Modern design often embraces minimalism. Think clean lines, uncluttered spaces, and a focus on functionality. Use neutral colors like whites, grays, and blacks as your base.
+  </p>
+
+  <div class="mt-3
+">
+      <a class="text-xl font-bold hover:border-b-2 border-lime-500" href="https://www.thespruce.com/living-room-ideas-5194639" target="_blank">
+
+    View Details
+                
+   </a>
+   <i class="
+        fa-solid fa-location-arrow text-xs bg-[#abef5f]
+        px-2 py-1  ml-2 mt-1 rounded-full hover:text-lime-500 hover:bg-black
+        "></i></div>
+</div>
+</div>
+</div>
+</section>
     </main>
 
   </body>

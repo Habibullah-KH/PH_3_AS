@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bonheur+Royale&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *,
 *::before,
 *::after{
@@ -20,4 +24,24 @@
   /* rgb(164, 218, 195) */
   clr-nutral_4: #77aaea;
   /* rgb(119, 170, 234) */
+}
+
+main .modern h3{
+
+  font-family: "Bonheur Royale", cursive;
+}
+
+main .modern p{
+
+  font-weight: "Bold";
+}
+
+main .royle h3{
+
+  font-family: "Baskervville SC", serif;
+}
+
+main .royle p{
+
+  font-weight: "Bold";
 }
