@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!doctype html>  
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +21,16 @@
 
 
     <!--* tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <!-- <script src="/tailwind.config.js"></script> -->
 
 <!--* tailwind_config.js -->
 <script>
   tailwind.config = {
+
+    content: ["./**/*.{html,js}"],
+
     theme: {
       extend: {
         colors: {
@@ -72,14 +77,14 @@
 
 
 
-  <body class="font-[Manrope]">
+  <body class="font-[Manrope] max-w-[1920px] m-auto">
 
 
     <!--* navbar -->
 
     <div  class="navbar bg-base-100">
       <div class="navbar-start">
-        <i class="
+        <i class=" 
         fa-solid fa-location-arrow text-sm bg-[#abef5f]
         px-2 py-1  ml-5 mt-1 rounded-full
         "></i>
@@ -197,7 +202,7 @@
 
       <!--* card_area -->
        
-      <div class="card_area flex flex-col lg:flex-row p-20 md:p-20 xl:p-10 mt-5
+      <div class="card_area flex flex-col lg:flex-row p-5 md:p-20 xl:p-10 mt-5
       items-center relative justify-center">
       <img class="
       absolute top-5 md:left-10 z-[-1] xl:z-0 md:w-[4rem] 2xl:w-auto xl:left-5
@@ -231,7 +236,7 @@
               ">
                  <div class="img_container p-5">
 
-                  <img src="./B10-Assignment-03/assets/commercial.png">
+                  <img class="w-full object-cober" src="./B10-Assignment-03/assets/commercial.png">
                  </div>
 
                  <div class="text_container p-5">
@@ -252,7 +257,7 @@
               ">
                  <div class="img_container p-5">
 
-                  <img src="./B10-Assignment-03/assets/residential.png">
+                  <img class="w-full object-cober" src="./B10-Assignment-03/assets/residential.png">
                  </div>
 
                  <div class="text_container p-5">
@@ -598,7 +603,7 @@ and modern.
 
 <section class="custom_section lg:px-20 ">
 
-  <div class="text_area text-center p-10 flex flex-col items-center ">
+  <div class="text_area text-center p-5 flex flex-col items-center ">
 
     <h3 class="
     font-extrabold text-4xl mb-5 border-t-2 pt-10
@@ -618,7 +623,7 @@ and modern.
 
 <!--* carousel 1 -->
   <div class="modern
-  text_carousle_area flex flex-col-reverse items-center shadow-2xl p-4 m-auto
+  text_carousle_area flex flex-col-reverse items-center shadow-2xl p-4 mx-auto
   rounded-[2rem] hover:border-2 border-gray-400 md:h-[30rem] ease-in-out duration-100
   
 w-[70%]  md:w-1/2 xl:h-auto
@@ -673,7 +678,7 @@ w-[70%]  md:w-1/2 xl:h-auto
 
 <!--* carousel 2 -->
   <div class="royle
-  text_carousle_area2 flex flex-col  items-center shadow-2xl p-4 m-auto
+  text_carousle_area2 flex flex-col  items-center shadow-2xl p-4 mx-auto
   rounded-[2rem] hover:border-2 border-gray-400 xl:w-[70%] md:h-[30rem]
   w-[70%] md:m-0 xl:m-auto md:mt-0 ease-in-out duration-100
   md:w-1/2 xl:h-auto
