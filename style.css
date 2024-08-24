@@ -45,3 +45,9 @@ main .royle p{
 
   font-weight: "Bold";
 }
+
+main .text_input_containter{
+
+  background-image: url(./B10-Assignment-03/assets/bg.jpg);
+  object-fit: cover;
+}
