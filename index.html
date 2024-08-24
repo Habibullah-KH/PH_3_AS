@@ -15,28 +15,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bonheur+Royale&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 <!--* font2 link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
 
     <!--* tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
 <!--* tailwind_config.js -->
-    <script>
-      tailwind.config = {
-        theme: {
-
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-
-              fontFamily: {
-                fn: ['Roboto', 'sans-serif'],
-            },
-            
-          },
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
         },
+        fontFamily: {
+          Manrope: ['Manrope', 'sans-serif'],
+    }
       }
-    </script>
+    }
+  }
+</script>
 
 <!--* tailwind_customize -->
 
@@ -65,12 +66,18 @@
     <link rel="stylesheet" href="style.css">
 
   </head>
-  <body class="font-fn">
+
+
+
+
+
+
+  <body class="font-[Manrope]">
 
 
     <!--* navbar -->
 
-    <div class="navbar bg-base-100">
+    <div  class="navbar bg-base-100">
       <div class="navbar-start">
         <i class="
         fa-solid fa-location-arrow text-sm bg-[#abef5f]
@@ -84,7 +91,7 @@
       
       <!--* nav button -->
 
-      <div class="navbar-center hidden lg:flex">
+      <div id="home" class="navbar-center  hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
                 <li class="hover:font-bold hover:bg-transparent"><a class="" href="">Home</a></li>
                 <li class="hover:font-bold hover:bg-transparent"><a class="" href="https://github.com/Habibullah-KH" target="_blank">Services</a></li>
@@ -155,7 +162,7 @@
 
         <div class="text_section text-center">
           <h1 class="
-          text-5xl font-bold
+          text-5xl font-extrabold
           mb-5
           ">A barn house of this design has a
             <br>
@@ -170,7 +177,7 @@
         inline-block mt-5 border-2 border-white
         ">
         <a href="https://github.com/ProgrammingHero1" target="_blank">
-          Book Consult
+          View Details
         
         <i class="
         fa-solid fa-location-arrow text-sm text-black
@@ -190,7 +197,7 @@
 
       <!--* card_area -->
        
-      <div class="card_area flex flex-col lg:flex-row p-10 mt-5
+      <div class="card_area flex flex-col lg:flex-row p-20 mdz:p-10 mt-5
       items-center relative justify-center">
       <img class="
       absolute top-5 left-20 z-[-1] xl:z-0
@@ -208,18 +215,18 @@
             About Us
           </button></a>
 
-          <h2 class="text-3xl font-bold mb-3">We design thoughtful,
+          <h2 class="text-3xl font-extrabold mb-3">We design thoughtful,
             liveable spaces</h2>
 
             <p>The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood. sleek metal accents.</p>
               
-            <div class="icon_container">
+            <div class="icon_container sm:gap-5 md:flex lg:flex-col">
     
               <!--* card1 -->
               <a href="https://www.bing.com/images/search?q=commercial+house&qpvt=comarsial+house&FORM=IGRE" target="_blank">
               <div class="
-              card_1 flex items-center inline my-5 ease-in-out duration-100
+              card_1 flex items-center inline sm:my-2 my-5 ease-in-out duration-100
               shadow-xl rounded-2xl bg-white text-left hover:border-2 border-gray-400
               ">
                  <div class="img_container p-5">
@@ -229,7 +236,7 @@
 
                  <div class="text_container p-5">
                   <h3
-                  class="font-bold"
+                  class="font-extrabold"
                   >Commercial</h3>
                   <p>The barn house captivates with its blend
                     of rustic charm and modern.</p>
@@ -250,7 +257,7 @@
 
                  <div class="text_container p-5">
                   <h3
-                  class="font-bold"
+                  class="font-extrabold"
                   >Commercial</h3>
                   <p>The barn house captivates with its blend
                     of rustic charm and modern.</p>
@@ -285,7 +292,7 @@
               </button></a>
 
               <h3 class="
-              font-bold text-4xl mb-5
+              font-extrabold text-4xl mb-5
               ">
                 Our Works Process
               </h3>
@@ -318,7 +325,7 @@
               <div class="card_text">
 
                 <h3 class="
-                font-bold text-xl p2-3
+                font-extrabold text-xl p2-3
                 "> 
                   
                   Concept
@@ -345,7 +352,7 @@
               <div class="card_text">
 
                 <h3 class="
-                font-bold text-xl p2-3
+                font-extrabold text-xl p2-3
                 ">
                   Design Process
                 </h3>
@@ -370,7 +377,7 @@ and modern.
               <div class="card_text">
 
                 <h3 class="
-                font-bold text-xl p2-3
+                font-extrabold text-xl p2-3
                 ">
                   Supervision
                 </h3>
@@ -395,7 +402,7 @@ and modern.
               <div class="card_text">
 
                 <h3 class="
-                font-bold text-xl p2-3
+                font-extrabold text-xl p2-3
                 ">Budget Planning</h3>
 
                 <p>
@@ -432,7 +439,7 @@ and modern.
 
 
             <h3 class="
-            text-4xl font-bold mb-5
+            text-4xl font-extrabold mb-5
             ">
             Our Latest Portfolio
 
@@ -473,14 +480,14 @@ and modern.
 
             <div class="text_container p-5 h-full md:mt-20">
 
-              <h3 class="text-2xl font-bold mb-2">commercial</h3>
+              <h3 class="text-2xl font-extrabold mb-2">commercial</h3>
               <p class="text-sm mb-2">The barn house captivates with its blend of rustic charm
                 and modern. The barn house captivates with its blend of
                 rustic charm and modern .</p>
 <div class="
 
 ">
-                <a class="text-2xl font-bold hover:border-b-2 border-lime-500 " 
+                <a class="text-2xl font-boldfont-extrabold hover:border-b-2 border-lime-500 " 
                 href="https://www.youtube.com/@buildingconstruction8386" target="_blank"
                 >
                   View Details
@@ -537,7 +544,7 @@ and modern.
 
             <div class="text_container  p-5 md:w-3/5 md:mt-6">
 
-              <h3 class="text-2xl font-bold mb-2">commercial</h3>
+              <h3 class="text-2xl font-extrabold mb-2">commercial</h3>
               <p class="text-sm mb-2">The barn house captivates with its blend of rustic charm
                 and modern. The barn house captivates with its blend of
                 rustic charm and modern .</p>
@@ -594,7 +601,7 @@ and modern.
   <div class="text_area text-center p-10 flex flex-col items-center ">
 
     <h3 class="
-    font-bold text-4xl mb-5 border-t-2 pt-10
+    font-extrabold text-4xl mb-5 border-t-2 pt-10
     ">Our Living Room Design</h3>
 
     <p class="
@@ -644,7 +651,7 @@ w-[70%]  md:w-1/2 xl:h-auto
 <div class="text_area p-5 xl:text-left text-center h-1/2 xl:p-16 xl:w-[55%]">
 
   <h3 class="
-  font-bold text-3xl mb-3
+  font-extrabold text-3xl mb-3
   ">Modern Style</h3>
 
   <p> Stick to neutral colors soft creams, warm beiges, and muted grays. These create a soothing backdrop for the room.</p>
@@ -701,7 +708,7 @@ w-[70%]  md:w-1/2 xl:h-auto
 <div class="text_area p-5 xl:text-right text-center h-1/2 xl:p-16 xl:w-[55%]">
   
   <h3 class="
-  font-bold text-3xl mb-3
+  font-extrabold text-3xl mb-3
   ">
   <span class="font-fn1">Royle</span> Style</h3>
 
@@ -744,7 +751,7 @@ w-[70%]  md:w-1/2 xl:h-auto
       </button></a>
 
       <h3 class="
-      font-bold text-4xl mb-3
+      font-extrabold text-4xl mb-3
       ">Let's Discuss Next Project</h3>
 
       <p>The barn house captivates with its blend of rustic charm and modern sophistication,<br>
@@ -757,19 +764,19 @@ w-[70%]  md:w-1/2 xl:h-auto
   <div class="input_field grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
 
     <input class="
-    py-3 px-10 rounded-full
+    py-4 px-10 rounded-full
     "
      type="text" name="fname" id="fname" placeholder="First Name*">
     <input class="
-    py-3 px-10 rounded-full
+    py-4 px-10 rounded-full
     "
      type="text" name="lname" id="lname" placeholder="Last Name*">
     <input class="
-    py-3 px-10 rounded-full
+    py-4 px-10 rounded-full
     "
      type="number" name="pnum" id="pnum" placeholder="Phone Number*">
     <input class="
-    py-3 px-10 rounded-full
+    py-4 px-10 rounded-full
     "
      type="email" name="email" id="email" placeholder="Email Number*">
 
@@ -778,7 +785,7 @@ w-[70%]  md:w-1/2 xl:h-auto
   </div>
   
     <div class=
-    "button bg-[#abef5f] px-4 py-2 rounded-full ease-in-out duration-100
+    "button bg-[#abef5f] py-4 rounded-full ease-in-out duration-100
     hover:bg-transparent hover:border-2 hover:border-gray-500 font-bold
     hidden sm:block text-center
     ">
@@ -801,7 +808,7 @@ w-[70%]  md:w-1/2 xl:h-auto
 
 
       <footer id="footer" class="
-      footer footer-center bg-[#1c1c1c] text-white rounded p-10
+      footer footer-center bg-[#1c1c1c] text-white rounded px-10 py-20
       ">
 
       <div class="text_area">
@@ -821,17 +828,20 @@ w-[70%]  md:w-1/2 xl:h-auto
           featuring weathered wood. sleek metal accents.</p>
       </div>
         <nav class="grid md:grid-flow-col gap-6 md:gap-5 md:w-3/6 text-gray-400 text-md">
-          <a href="https://github.com/Habibullah-KH" target="_blank"
-           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">About us</a>
+          <a href="#home"
+           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Home</a>
 
           <a href="https://github.com/Habibullah-KH" target="_blank"
-           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Contact</a>
+           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Services</a>
+
+          <a href="https://github.com/Habibullah-KH" target="_blank"
+           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Portfolio</a>
+
+          <a href="https://github.com/Habibullah-KH" target="_blank"
+           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Blogs</a>
 
           <a href="https://www.linkedin.com/services" target="_blank"
-           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Jobs</a>
-
-          <a href="https://www.shopify.com/blog/44447941-how-to-create-a-press-kit-that-gets-publicity-for-your-business" target="_blank"
-           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Press kit</a>
+           class="link link-hover hover:font-bold hover:text-lime-500 ease-in-out duration-100">Contact Us</a>
         </nav>
         <nav>
           
